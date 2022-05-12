@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/example
+# Install script for directory: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-objdump.exe")
 endif()
 

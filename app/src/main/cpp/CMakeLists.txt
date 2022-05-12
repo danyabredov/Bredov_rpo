@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.18.1)
 
 # Declares and names the project.
 
-project("rpolaba1")
+project("lab1")
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -15,7 +15,7 @@ project("rpolaba1")
 # Gradle automatically packages shared libraries with your APK.
 
 add_library( # Sets the name of the library.
-        rpolaba1
+        lab1
 
         # Sets the library as a shared library.
         SHARED
@@ -40,31 +40,29 @@ find_library( # Sets the name of the path variable.
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
-#target_link_libraries( # Specifies the target library.
-#        rpolaba1
-
-        # Links the target library to the log library
-        # included in the NDK.
- #       ${log-lib})
-
 add_library(spdlog STATIC IMPORTED)
 
 set_target_properties(spdlog PROPERTIES IMPORTED_LOCATION
-        C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/build/x86_64/libspdlog.a)
+        C:/Android/AndroidStudioProjects/Lab1/app/libs/build/x86_64/libspdlog.a)
 
-target_include_directories(rpolaba1 PUBLIC
-        C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/include
-        C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/mbedtls/mbedtls/include)
+target_include_directories(lab1 PUBLIC
+        C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/include
+        C:/Android/AndroidStudioProjects/Lab1/app/libs/mbedtls/mbedtls/include)
+
+
 
 add_library(mbedcrypto SHARED IMPORTED)
+
 set_target_properties(mbedcrypto PROPERTIES IMPORTED_LOCATION
-        C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/mbedtls/build/x86_64/library/libmbedcrypto.so)
+        C:/Android/AndroidStudioProjects/Lab1/app/libs/mbedtls/built/x86_64/library/libmbedcrypto.so)
+
+
+
 
 target_link_libraries( # Specifies the target library.
-        rpolaba1
-   #     native-lib
+        lab1
         spdlog
         mbedcrypto
         # Links the target library to the log library
         # included in the NDK.
-        ${log-lib} )
+        ${log-lib})

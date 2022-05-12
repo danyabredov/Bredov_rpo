@@ -15,12 +15,10 @@ public class PinpadActivity extends AppCompatActivity {
     TextView tvPin;
     String pin = "";
     final int MAX_KEYS = 10;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pinpad);
-
         tvPin = findViewById(R.id.txtPin);
 
         TextView ta = findViewById(R.id.txtAmount);
@@ -37,14 +35,13 @@ public class PinpadActivity extends AppCompatActivity {
             tp.setText("Осталась одна попытка");
 
         ShuffleKeys();
+
         findViewById(R.id.btnOK).setOnClickListener((View) -> {
             Intent it = new Intent();
             it.putExtra("pin", pin);
             setResult(RESULT_OK, it);
             finish();
         });
-
-
         findViewById(R.id.btnReset).setOnClickListener((View) -> {
             pin = "";
             tvPin.setText("");

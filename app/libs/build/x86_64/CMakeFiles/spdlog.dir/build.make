@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe
+CMAKE_COMMAND = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -E rm -f
+RM = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog
+CMAKE_SOURCE_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64
+CMAKE_BINARY_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64
 
 # Include any dependencies generated for this target.
 include CMakeFiles/spdlog.dir/depend.make
@@ -76,95 +76,95 @@ include CMakeFiles/spdlog.dir/progress.make
 include CMakeFiles/spdlog.dir/flags.make
 
 CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/spdlog.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/spdlog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\spdlog.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\spdlog.cpp
+CMakeFiles/spdlog.dir/src/spdlog.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/spdlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\spdlog.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\spdlog.cpp
 
 CMakeFiles/spdlog.dir/src/spdlog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/spdlog.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\spdlog.cpp > CMakeFiles\spdlog.dir\src\spdlog.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\spdlog.cpp > CMakeFiles\spdlog.dir\src\spdlog.cpp.i
 
 CMakeFiles/spdlog.dir/src/spdlog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/spdlog.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\spdlog.cpp -o CMakeFiles\spdlog.dir\src\spdlog.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\spdlog.cpp -o CMakeFiles\spdlog.dir\src\spdlog.cpp.s
 
 CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/stdout_sinks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\stdout_sinks.cpp
+CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/stdout_sinks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\stdout_sinks.cpp
 
 CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\stdout_sinks.cpp > CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\stdout_sinks.cpp > CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.i
 
 CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\stdout_sinks.cpp -o CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\stdout_sinks.cpp -o CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.s
 
 CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/color_sinks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\color_sinks.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\color_sinks.cpp
+CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/color_sinks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\color_sinks.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\color_sinks.cpp
 
 CMakeFiles/spdlog.dir/src/color_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/color_sinks.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\color_sinks.cpp > CMakeFiles\spdlog.dir\src\color_sinks.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\color_sinks.cpp > CMakeFiles\spdlog.dir\src\color_sinks.cpp.i
 
 CMakeFiles/spdlog.dir/src/color_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/color_sinks.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\color_sinks.cpp -o CMakeFiles\spdlog.dir\src\color_sinks.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\color_sinks.cpp -o CMakeFiles\spdlog.dir\src\color_sinks.cpp.s
 
 CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/file_sinks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\file_sinks.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\file_sinks.cpp
+CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/file_sinks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\file_sinks.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\file_sinks.cpp
 
 CMakeFiles/spdlog.dir/src/file_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/file_sinks.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\file_sinks.cpp > CMakeFiles\spdlog.dir\src\file_sinks.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\file_sinks.cpp > CMakeFiles\spdlog.dir\src\file_sinks.cpp.i
 
 CMakeFiles/spdlog.dir/src/file_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/file_sinks.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\file_sinks.cpp -o CMakeFiles\spdlog.dir\src\file_sinks.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\file_sinks.cpp -o CMakeFiles\spdlog.dir\src\file_sinks.cpp.s
 
 CMakeFiles/spdlog.dir/src/async.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/async.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/async.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/spdlog.dir/src/async.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\async.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\async.cpp
+CMakeFiles/spdlog.dir/src/async.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/async.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/spdlog.dir/src/async.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\async.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\async.cpp
 
 CMakeFiles/spdlog.dir/src/async.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/async.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\async.cpp > CMakeFiles\spdlog.dir\src\async.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\async.cpp > CMakeFiles\spdlog.dir\src\async.cpp.i
 
 CMakeFiles/spdlog.dir/src/async.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/async.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\async.cpp -o CMakeFiles\spdlog.dir\src\async.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\async.cpp -o CMakeFiles\spdlog.dir\src\async.cpp.s
 
 CMakeFiles/spdlog.dir/src/cfg.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/cfg.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/cfg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\cfg.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\cfg.cpp
+CMakeFiles/spdlog.dir/src/cfg.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/cfg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\cfg.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\cfg.cpp
 
 CMakeFiles/spdlog.dir/src/cfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/cfg.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\cfg.cpp > CMakeFiles\spdlog.dir\src\cfg.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\cfg.cpp > CMakeFiles\spdlog.dir\src\cfg.cpp.i
 
 CMakeFiles/spdlog.dir/src/cfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/cfg.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\cfg.cpp -o CMakeFiles\spdlog.dir\src\cfg.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\cfg.cpp -o CMakeFiles\spdlog.dir\src\cfg.cpp.s
 
 CMakeFiles/spdlog.dir/src/fmt.cpp.o: CMakeFiles/spdlog.dir/flags.make
-CMakeFiles/spdlog.dir/src/fmt.cpp.o: C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/spdlog/src/fmt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/spdlog.dir/src/fmt.cpp.o"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\fmt.cpp.o -c C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\fmt.cpp
+CMakeFiles/spdlog.dir/src/fmt.cpp.o: C:/Android/AndroidStudioProjects/Lab1/app/libs/spdlog/src/fmt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/spdlog.dir/src/fmt.cpp.o"
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spdlog.dir\src\fmt.cpp.o -c C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\fmt.cpp
 
 CMakeFiles/spdlog.dir/src/fmt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/fmt.cpp.i"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\fmt.cpp > CMakeFiles\spdlog.dir\src\fmt.cpp.i
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\fmt.cpp > CMakeFiles\spdlog.dir\src\fmt.cpp.i
 
 CMakeFiles/spdlog.dir/src/fmt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/fmt.cpp.s"
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog\src\fmt.cpp -o CMakeFiles\spdlog.dir\src\fmt.cpp.s
+	C:\Android\SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog\src\fmt.cpp -o CMakeFiles\spdlog.dir\src\fmt.cpp.s
 
 # Object files for target spdlog
 spdlog_OBJECTS = \
@@ -188,7 +188,7 @@ libspdlog.a: CMakeFiles/spdlog.dir/src/cfg.cpp.o
 libspdlog.a: CMakeFiles/spdlog.dir/src/fmt.cpp.o
 libspdlog.a: CMakeFiles/spdlog.dir/build.make
 libspdlog.a: CMakeFiles/spdlog.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libspdlog.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libspdlog.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\spdlog.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\spdlog.dir\link.txt --verbose=$(VERBOSE)
 
@@ -202,6 +202,6 @@ CMakeFiles/spdlog.dir/clean:
 .PHONY : CMakeFiles/spdlog.dir/clean
 
 CMakeFiles/spdlog.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64 C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64 C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles\spdlog.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64 C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64 C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles\spdlog.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/spdlog.dir/depend
 

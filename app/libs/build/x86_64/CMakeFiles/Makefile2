@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe
+CMAKE_COMMAND = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -E rm -f
+RM = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog
+CMAKE_SOURCE_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64
+CMAKE_BINARY_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -112,14 +112,14 @@ example/clean: example/CMakeFiles/example.dir/clean
 CMakeFiles/spdlog.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spdlog.dir\build.make CMakeFiles/spdlog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spdlog.dir\build.make CMakeFiles/spdlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target spdlog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target spdlog"
 .PHONY : CMakeFiles/spdlog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/spdlog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/spdlog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles 0
 .PHONY : CMakeFiles/spdlog.dir/rule
 
 # Convenience name for target.
@@ -139,14 +139,14 @@ CMakeFiles/spdlog.dir/clean:
 example/CMakeFiles/example.dir/all: CMakeFiles/spdlog.dir/all
 	$(MAKE) $(MAKESILENT) -f example\CMakeFiles\example.dir\build.make example/CMakeFiles/example.dir/depend
 	$(MAKE) $(MAKESILENT) -f example\CMakeFiles\example.dir\build.make example/CMakeFiles/example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles --progress-num=1,2 "Built target example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles --progress-num=1,2 "Built target example"
 .PHONY : example/CMakeFiles/example.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 example/CMakeFiles/example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles 0
 .PHONY : example/CMakeFiles/example.dir/rule
 
 # Convenience name for target.

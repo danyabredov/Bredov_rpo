@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe
+CMAKE_COMMAND = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -E rm -f
+RM = C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\spdlog
+CMAKE_SOURCE_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\spdlog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64
+CMAKE_BINARY_DIR = C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cpack.exe --config ./CPackConfig.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cpack.exe --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -88,7 +88,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/Lenovo/AndroidStudioProjects/rpolaba1/app/libs/build/x86_64/CPackSourceConfig.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Android/AndroidStudioProjects/Lab1/app/libs/build/x86_64/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -99,31 +99,31 @@ package_source/fast: package_source
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -134,7 +134,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -155,20 +155,20 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	C:\Users\Lenovo\AppData\Local\Android\Sdk\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	C:\Android\SDK\cmake\3.18.1\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\AndroidStudioProjects\rpolaba1\app\libs\build\x86_64\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Android\AndroidStudioProjects\Lab1\app\libs\build\x86_64\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

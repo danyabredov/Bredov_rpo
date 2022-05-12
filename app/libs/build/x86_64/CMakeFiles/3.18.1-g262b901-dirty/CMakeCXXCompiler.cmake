@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe")
+set(CMAKE_CXX_COMPILER "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_COMPILER_VERSION "9.0")
@@ -20,11 +20,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ar.exe")
+set(CMAKE_AR "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ar.exe")
 set(CMAKE_CXX_COMPILER_AR "CMAKE_CXX_COMPILER_AR-NOTFOUND")
-set(CMAKE_RANLIB "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ranlib.exe")
+set(CMAKE_RANLIB "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ranlib.exe")
 set(CMAKE_CXX_COMPILER_RANLIB "CMAKE_CXX_COMPILER_RANLIB-NOTFOUND")
-set(CMAKE_LINKER "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ld.exe")
+set(CMAKE_LINKER "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android-ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -83,7 +83,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.9/include;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.9/include;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/x86_64-linux-android;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++;m;gcc;dl;c;gcc;dl")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.9/lib/linux/x86_64;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/x86_64-linux-android/lib64;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/21;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/x86_64-linux-android/lib;C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.9/lib/linux/x86_64;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/x86_64-linux-android/lib64;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/21;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/x86_64-linux-android/lib;C:/Android/SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
