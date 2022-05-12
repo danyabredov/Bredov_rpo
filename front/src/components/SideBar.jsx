@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
-import {faGlobe} from "@fortawesome/free-solid-svg-icons";
+import {faGlobe, faPalette} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const SideBar = props => {
@@ -10,14 +10,18 @@ const SideBar = props => {
             { props.expanded &&
                 <Nav className={"flex-column my-sidebar my-sidebar-expanded"}>
                     <Nav.Item><Nav.Link as={Link} to="/countries"><FontAwesomeIcon icon={faGlobe} />{' '}Страны</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/artists"><FontAwesomeIcon icon={faPalette} />{' '}Художники</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/account"><FontAwesomeIcon icon={faPalette} />{' '}MyAccountComponent</Nav.Link></Nav.Item>
                 </Nav>
             }
             { !props.expanded &&
                 <Nav className={"flex-column my-sidebar my-sidebar-collapsed"}>
                     <Nav.Item><Nav.Link as={Link} to="/countries"><FontAwesomeIcon icon={faGlobe} size="2x" /></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/artists"><FontAwesomeIcon icon={faPalette} size="2x" /></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link as={Link} to="/account"><FontAwesomeIcon icon={faPalette} />{' '}MyAccountComponent</Nav.Link></Nav.Item>
                 </Nav>
             }
-            </>
+        </>
     )
 }
 

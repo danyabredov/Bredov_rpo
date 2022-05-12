@@ -3,18 +3,25 @@ package com.example.backend.controllers;
 import com.example.backend.models.Artist;
 import com.example.backend.models.Museum;
 import com.example.backend.models.User;
+import com.example.backend.tools.DataValidationException;
+import com.example.backend.tools.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.codec.Hex;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import com.example.backend.repositories.MuseumRepository;
 import com.example.backend.repositories.UserRepository;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.util.*;
 
-//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1")
 public class UserController {
@@ -22,13 +29,33 @@ public class UserController {
     UserRepository userRepository;
     @Autowired
     MuseumRepository museumRepository;
-    @GetMapping("/users")
+/*    @GetMapping("/users")
     public List
     getAllUsers() {
         return userRepository.findAll();
+    } */
+
+    @GetMapping("/users")
+    public Page getAllUsers(@RequestParam("page") int page, @RequestParam("limit") int limit) {
+        return userRepository.findAll(PageRequest.of(page, limit, Sort.by(Sort.Direction.ASC, "name")));
     }
 
-    @PostMapping("/users")
+    @GetMapping("/users/{id}")
+    public ResponseEntity getUser(@PathVariable(value = "id") Long userId)
+            throws DataValidationException
+    {
+        User user = userRepository.findById(userId)
+                .orElseThrow(()-> new DataValidationException("user с таким индексом не найден"));
+        return ResponseEntity.ok(user);
+    }
+
+    @PostMapping("/deleteusers")
+    public ResponseEntity deleteUsers(@Valid @RequestBody List users) {
+        userRepository.deleteAll(users);
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
+/*    @PostMapping("/users")
     public ResponseEntity<Object> createUser(@RequestBody User user)
             throws Exception {
         try {
@@ -47,7 +74,7 @@ public class UserController {
             return ResponseEntity.ok(map);
         }
     }
-
+*/
     @PostMapping("/users/{id}/addmuseums")
     public ResponseEntity<Object> addMuseums(@PathVariable(value = "id") Long userId,
                                              @Validated @RequestBody Set<Museum> museums) {
@@ -95,21 +122,31 @@ public class UserController {
 */
     @PutMapping("/users/{id}")
     public ResponseEntity<User> updateUser(@PathVariable(value = "id") Long userId,
-                                           @Validated @RequestBody User userDetails) {
-        User user = null;
-        Optional<User> cc = userRepository.findById(userId);
-        if (cc.isPresent()) {
-            user = cc.get();
-            user.login = userDetails.login;
+                                           @Valid @RequestBody User userDetails) throws DataValidationException {
+        try {
+            User user = userRepository.findById(userId)
+                    .orElseThrow(() -> new DataValidationException("Пользователь с таким индексом не найден"));
             user.email = userDetails.email;
+            String np = userDetails.np;
+            if (np != null && !np.isEmpty()) {
+                byte[] b = new byte[32];
+                new Random().nextBytes(b);
+                String sait = new String(Hex.encode(b));
+                user.password = Utils.ComputeHash(np, sait);
+                user.sait = sait;
+            }
             userRepository.save(user);
-        } else
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, "user not found"
-            );
-        return ResponseEntity.ok(user);
+            return ResponseEntity.ok(user);
+        }
+        catch (Exception ex) {
+            String error;
+            if (ex.getMessage().contains("users.email_UNIQUE"))
+                throw new DataValidationException("Пользователь с такой почтой уже есть в базе");
+            else
+                throw new DataValidationException("Неизвестная ошибка");
+        }
     }
-
+/*
     @DeleteMapping("/users/{id}")
     public Map<String, Boolean> deleteUser(@PathVariable(value = "id") Long userId) {
         Optional<User> user = userRepository.findById(userId);
@@ -121,5 +158,5 @@ public class UserController {
         else
             response.put("deleted", Boolean.FALSE);
         return response;
-    }
+    } */
 }

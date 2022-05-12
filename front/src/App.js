@@ -3,7 +3,10 @@ import React from "react";
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import CountryListComponent from "./components/CountryListComponent";
+import ArtistListComponent from "./components/ArtistListComponent";
 import CountryComponent from "./components/CountryComponent";
+import ArtistComponent from "./components/ArtistComponent";
+import MyAccountComponent from "./components/MyAccountComponent";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Utils from "./utils/Utils";
@@ -15,6 +18,8 @@ const ProtectedRoute = ({children}) => {
     let user = Utils.getUser();
     return user ? children : <Navigate to={'/login'} />
    };
+
+
 
    function App(props) {
     const [exp,setExpanded] = useState(true);
@@ -34,6 +39,9 @@ const ProtectedRoute = ({children}) => {
                             <Route path="home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
                             <Route path="countries" element={<ProtectedRoute><CountryListComponent/></ProtectedRoute>}/>
                             <Route path="countries/:id" element={<ProtectedRoute><CountryComponent /></ProtectedRoute>}/>
+                            <Route path="account" element={<ProtectedRoute><MyAccountComponent /></ProtectedRoute>} />
+                            <Route path="artists" element={<ProtectedRoute><ArtistListComponent/></ProtectedRoute>}/>
+                            <Route path="artists/:id" element={<ProtectedRoute><ArtistComponent /></ProtectedRoute>}/>
                         </Routes>
                     </div>
                 </div>

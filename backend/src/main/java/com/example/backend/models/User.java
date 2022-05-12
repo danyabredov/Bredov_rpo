@@ -1,11 +1,14 @@
 package com.example.backend.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
+
+@CrossOrigin(origins = "http://localhost:3000")
 
 @Entity
 @Table(name = "users")
@@ -43,6 +46,9 @@ public class User {
 
     @Column(name = "activity")
     public LocalDateTime activity;
+
+    @Transient
+    public String np;
 
     @ManyToMany(mappedBy = "users")
     public Set<Museum> museums = new HashSet<>();
