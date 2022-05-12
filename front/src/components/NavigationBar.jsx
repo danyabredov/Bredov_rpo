@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import Utils from "../utils/Utils";
@@ -36,6 +36,11 @@ class NavigationBarClass extends React.Component {
     render() {
         return (
             <Navbar bg="light" expand="lg">
+                <button type="button"
+                    className="btn btn-outline-secondary mr-2"
+                    onClick={this.props.toggleSideBar}>
+                    <FontAwesomeIcon icon={ faBars} />
+                </button>
             <Navbar.Brand><FontAwesomeIcon icon={faHome} />{' '}My RPO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
